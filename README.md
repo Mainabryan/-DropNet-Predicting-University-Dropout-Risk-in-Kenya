@@ -23,6 +23,8 @@ To build an **interactive machine learning app** that:
 
 ---)
 ![screenshot](https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/63e644752b27675a56c3f807c369cefa975055e4/Screenshot%202025-07-16%20121017.png)
+![SCREENSHOT](https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/d8814c1740d56dd39cdacb808f200946818362d4/Screenshot%202025-07-16%20121034.png)
+
 ## 🧠 ML Model Use)
 
 We trained a **Logistic Regression model** using synthetic but realistic student data to predict:
