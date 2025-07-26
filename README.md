@@ -22,7 +22,7 @@ To build an **interactive machine learning app** that:
 - Offers policymakers and citizens a way to simulate funding outcomes
 
 ---
-!(IMAGE)('https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/195532569a91386a283bb26902eaf08e8c3db16e/Screenshot%202025-07-16%20121017.png']
+![SCREENSHOT]('https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/195532569a91386a283bb26902eaf08e8c3db16e/Screenshot%202025-07-16%20121017.png')
 ## 🧠 ML Model Use)
 
 We trained a **Logistic Regression model** using synthetic but realistic student data to predict:
