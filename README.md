@@ -21,9 +21,8 @@ To build an **interactive machine learning app** that:
 - Highlights the impact of financial aid, scholarships, and mental health risk
 - Offers policymakers and citizens a way to simulate funding outcomes
 
----
-![SCREENSHOT]('https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/195532569a91386a283bb26902eaf08e8c3db16e/Screenshot%202025-07-16%20121017.png')
-![screenshot](https://github.com/Mainabryan/TUNUSIAN-BILLING-ANALYSIS/blob/d9a48566aa7dfedbc2acc1d9a4a6fe7075929196/Screenshot%202025-07-20%20075905.png)
+---)
+![screenshot](https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/63e644752b27675a56c3f807c369cefa975055e4/Screenshot%202025-07-16%20121017.png)
 ## 🧠 ML Model Use)
 
 We trained a **Logistic Regression model** using synthetic but realistic student data to predict:
