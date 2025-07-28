@@ -61,6 +61,36 @@ This preserved the dataset's size and kept the structure realistic without injec
 
 ![SCREENSHOT](https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/23f931110e295fc822d7d8c4c15e8666f57b65ab/Screenshot%202025-07-28%20194823.png)
 
+## 🧩 3. Encoding Categorical Variables
+
+The dataset included several **categorical features** such as:
+
+- `county` (e.g., Nairobi, Kisumu, Mombasa)
+- `financial_stress_level` (Low, Medium, High)
+- `mental_health_risk` (Low, Medium, High)
+- `public_uni` (Yes/No)
+
+### Why This Step Matters:
+Machine learning models like logistic regression require **numerical input**, so categorical features must be encoded in a way the model can interpret — without losing their meaning.
+
+### Encoding Strategy:
+- For **ordinal variables** like `financial_stress_level` and `mental_health_risk`, we used **Label Encoding**:
+  - Low → 0, Medium → 1, High → 2
+- For **nominal variables** like `county`, we also used **Label Encoding** to keep the feature lightweight
+- Converted `public_uni` from Yes/No to binary 1/0
+
+```python
+from sklearn.preprocessing import LabelEncoder
+
+le = LabelEncoder()
+
+# Ordinal encoding
+data['financial_stress_level'] = le.fit_transform(data['financial_stress_level'])
+data['mental_health_risk'] = le.fit_transform(data['mental_health_risk'])
+
+# Nominal encoding
+data['county'] = le.fit_transform(data['county'])
+data['public_uni'] = data['public_uni'].map({'Yes': 1, 'No': 0})
 
 ## 🧠 ML Model Use)
 
