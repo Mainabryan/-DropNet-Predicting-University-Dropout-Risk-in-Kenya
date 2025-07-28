@@ -149,6 +149,26 @@ cols_to_scale = ['household_income', 'program_cost_per_year', 'helb_amount',
 
 data[cols_to_scale] = scaler.fit_transform(data[cols_to_scale])
 
+## 🤖 5. Model Training & Evaluation
+
+With a clean, encoded, and scaled dataset, we trained a **Logistic Regression model** to predict the likelihood of a university student dropping out.
+
+---
+
+### 🧪 Train-Test Split
+
+We split the dataset into:
+
+- **80% training data** – for model learning
+- **20% test data** – for evaluation
+
+```python
+from sklearn.model_selection import train_test_split
+
+X = data.drop("likely_to_dropout", axis=1)
+y = data["likely_to_dropout"]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 
 
