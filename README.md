@@ -1,5 +1,7 @@
 ##OVERVIEW OF STREAMLIT 
 ![Screenshot](https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/93ff62d28d49ad56af338f04251cc15b4e2e9db0/Screenshot%202025-07-28%20201059.png)
+#Predict te overview of the schooldrop_out
+![Screenshot](https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/038a9a795db37d59227f3c9593419453039dfe8e/Screenshot%202025-07-28%20201116.png)
 
 
 # -DropNet-Predicting-University-Dropout-Risk-in-Kenya
