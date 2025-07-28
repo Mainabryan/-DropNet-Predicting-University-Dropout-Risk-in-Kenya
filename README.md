@@ -22,8 +22,43 @@ To build an **interactive machine learning app** that:
 - Offers policymakers and citizens a way to simulate funding outcomes
 
 ---)
+## 📥 1. Loading the Dataset & EDA (Exploratory Data Analysis)
+
+We began by importing a custom dataset simulating the financial and academic details of university students in Kenya.
+
+### Why This Step Matters:
+- Understanding the **structure and types of data** is critical before modeling.
+- We explored key variables like `household_income`, `program_cost_per_year`, and `financial_stress_level` to identify trends, outliers, and relationships.
+
+### Actions Taken:
+- Loaded the data using Pandas
+- Inspected data types, column distribution, and sample rows
+- Visualized variables using **Seaborn** and **Matplotlib**:
+  - Histograms for income & academic performance
+  - Count plots for dropout risk by stress level
+  - Box plots to check income vs dropout patterns
+
+This step helped us frame the **financial vulnerability** among students and detect early signs of imbalance or skew.
+
+
 ![screenshot](https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/63e644752b27675a56c3f807c369cefa975055e4/Screenshot%202025-07-16%20121017.png)
 ![SCREENSHOT](https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/d8814c1740d56dd39cdacb808f200946818362d4/Screenshot%202025-07-16%20121034.png)
+
+## 🚨 2. Handling Missing Values
+
+Like most real-world datasets, some columns had missing values (e.g., `helb_amount`, `scholarship_amount`, and `mental_health_risk`).
+
+### Why This Step Matters:
+- Models can't learn from incomplete data
+- Naively removing rows can lead to bias or data loss
+
+### Actions Taken:
+- Used **median** for numeric columns with outliers (`household_income`, `program_cost_per_year`)
+- Used **0** for support-based features like `helb_amount`, `scholarship_amount`, and `other_support` — assuming no support
+- Used **mode** for categorical features like `financial_stress_level` and `mental_health_risk`
+
+This preserved the dataset's size and kept the structure realistic without injecting false assumptions.
+
 
 ## 🧠 ML Model Use)
 
