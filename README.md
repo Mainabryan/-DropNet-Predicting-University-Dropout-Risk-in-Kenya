@@ -119,6 +119,36 @@ The model considers:
 | GitHub         | Version control and collaboration |
 
 ---
+## 📊 4. Feature Scaling
+
+To prepare the dataset for logistic regression, we applied **feature scaling** to normalize numeric columns like:
+
+- `household_income`
+- `program_cost_per_year`
+- `helb_amount`
+- `scholarship_amount`
+- `other_support`
+
+### Why This Step Matters:
+Logistic Regression is sensitive to feature magnitudes. Without scaling, features with large values (e.g., `household_income`) could **dominate** others (e.g., `helb_amount`), resulting in a biased model.
+
+### Method Used:
+We used **StandardScaler** from `scikit-learn`, which transforms data so that:
+- Mean = 0
+- Standard deviation = 1
+
+### Code Snippet:
+```python
+from sklearn.preprocessing import StandardScaler
+
+scaler = StandardScaler()
+
+# Apply scaling to relevant columns
+cols_to_scale = ['household_income', 'program_cost_per_year', 'helb_amount', 
+                 'scholarship_amount', 'other_support']
+
+data[cols_to_scale] = scaler.fit_transform(data[cols_to_scale])
+
 
 
 
