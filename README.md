@@ -59,6 +59,8 @@ Like most real-world datasets, some columns had missing values (e.g., `helb_amou
 
 This preserved the dataset's size and kept the structure realistic without injecting false assumptions.
 
+![SCREENSHOT](https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/23f931110e295fc822d7d8c4c15e8666f57b65ab/Screenshot%202025-07-28%20194823.png)
+
 
 ## 🧠 ML Model Use)
 
