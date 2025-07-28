@@ -1,3 +1,7 @@
+##OVERVIEW OF STREAMLIT 
+![Screenshot](https://github.com/Mainabryan/-DropNet-Predicting-University-Dropout-Risk-in-Kenya/blob/93ff62d28d49ad56af338f04251cc15b4e2e9db0/Screenshot%202025-07-28%20201059.png)
+
+
 # -DropNet-Predicting-University-Dropout-Risk-in-Kenya
 Predicts university dropout risk in Kenya using logistic regression based on household income, HELB support, and financial stress levels. Built with Python and Streamlit.
 # 🎓 Kenya University Dropout Risk Predictor
